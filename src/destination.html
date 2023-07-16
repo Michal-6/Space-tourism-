@@ -1,0 +1,136 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/destination/destination.css">
+  <link rel="stylesheet" href="./style/typography.css">
+  <script defer src="js/ham.js"></script>
+  <script defer src="js/transitions.js"></script>
+  <script defer src="js/tabs.js"></script>
+
+  <title>Space tourism | Destination</title>
+</head>
+<body id="_body">
+  <div class="transition transition-1 is-active"></div>
+  <div id="ham-nav">
+    <a  href="./index.html" id="active">
+      <span class="a_number">00</span>
+      <span class="a_text">HOME</span>
+    </a>
+    <a href="./destination.html">
+      <span class="a_number">01</span>
+      <span class="a_text">DESTINATION</span>
+    </a>
+    <a href="./crew.html">
+      <span class="a_number">02</span>
+      <span class="a_text">CREW</span>
+    </a>
+    <a href="./technology.html">
+      <span class="a_number">03</span>
+      <span class="a_text">TECHNOLOGY</span>
+    </a>
+  </div>
+  <nav>
+    <a class="_hidden" href="./index.html"><img id="logo" src="./assets/shared/logo.svg" alt="logo"></a>
+    <span class="_hidden h_hid1" style="transition-delay: 100ms;" id="line"></span>
+    <div id="nav" class="_hidden">
+      <a class="_hidden h_hid2" style="transition-delay: 200ms;" href="./index.html">
+        <span class="a_number">00</span>
+        <span class="a_text">HOME</span>
+      </a>
+      <a class="_hidden h_hid3" style="transition-delay: 300ms;" href="./destination.html"  id="active">
+        <span class="a_number">01</span>
+        <span class="a_text">DESTINATION</span>
+      </a>
+      <a class="_hidden h_hid4" style="transition-delay: 400ms;" href="./crew.html">
+        <span class="a_number">02</span>
+        <span class="a_text">CREW</span>
+      </a>
+      <a class="_hidden h_hid5" style="transition-delay: 500ms;" href="./technology.html">
+        <span class="a_number">03</span>
+        <span class="a_text">TECHNOLOGY</span>
+      </a>
+    </div>
+    <button class="_hidden" id="ham-button" onclick="this.classList.toggle('open'); Open(this);"><img id="ham-img" src="./assets/shared/icon-hamburger.svg" alt=""></button>
+  </nav>
+  <div id="title" class="_hidden" style="transition-delay: 600ms;">
+      <h5 id="dest_number">01</h5>
+      <h5>PICK YOUR DESTINATION</span>
+  </div>
+  <section>
+      <div id="left">
+        <img style="animation-delay: 1450ms;" class="_tab destination-img active" src="./assets/destination/image-moon.png" alt="moon">
+        <img class="destination-img" src="./assets/destination/image-mars.png" alt="mars">
+        <img class="destination-img" src="./assets/destination/image-europa.png" alt="europa">
+        <img class="destination-img" src="./assets/destination/image-titan.png" alt="titan">
+      </div>
+      <div id="right">
+        <div id="tabs">
+          <button class="_hidden tab active" style="transition-delay: 700ms;">MOON</button>
+          <button class="_hidden tab" style="transition-delay: 800ms;">MARS</button>
+          <button class="_hidden tab" style="transition-delay: 900ms;">EUROPA</button>
+          <button class="_hidden tab" style="transition-delay: 1000ms;">TITAN</button>
+        </div>
+        <div class="content">
+          <div style="animation-delay: 1550ms;" class="_tab text-content active">
+            <h1>MOON</h1>
+            <p>
+              See our planet as you’ve never seen it before. A perfect 
+              relaxing trip away to help regain perspective and come 
+              back refreshed. While you’re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="text-content">
+            <h1>MARS</h1>
+            <p>
+              Don’t forget to pack your hiking boots. You’ll need them to 
+              tackle Olympus Mons, the tallest planetary mountain in 
+              our solar system. It’s two and a half times the size of 
+              Everest!
+            </p>
+          </div>
+          <div class="text-content">
+            <h1>EUROPA</h1>
+            <p>
+              The smallest of the four Galilean moons orbiting Jupiter, 
+              Europa is a winter lover’s dream. With an icy surface, it’s 
+              perfect for a bit of ice skating, curling, hockey, or simple 
+              relaxation in your snug wintery cabin.
+            </p>
+          </div>
+          <div class="text-content">
+            <h1>TITAN</h1>
+            <p>
+              The only moon known to have a dense atmosphere other 
+              than Earth, Titan is a home away from home (just a few 
+              hundred degrees colder!). As a bonus, you get striking 
+              views of the Rings of Saturn.
+            </p>
+          </div>
+          <hr class="_hidden" style="transition-delay: 1100ms;">
+        </div>
+        <div class="details-wrap">
+          <div class="details _hidden" style="transition-delay: 1200ms;">
+            <span class="subheading2">AVG. DISTANCE</span>
+            <h5 style="animation-delay: 1650ms;" class="_tab dist active">384,400 km</h5>
+            <h5 class="dist">225 mil. km</h5>
+            <h5 class="dist">628 mil. km</h5>
+            <h5 class="dist">1.6 bil. km</h5>
+          </div>
+          <div class="details _hidden" style="transition-delay: 1300ms;">
+            <span class="subheading2">EST. TRAVEL TIME</span>
+            <h5  style="animation-delay: 1650ms;"class="_tab time active">3 days</h5>
+            <h5 class="time">9 months</h5>
+            <h5 class="time">3 years</h5>
+            <h5 class="time">7 years</h5>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>

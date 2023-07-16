@@ -1,0 +1,124 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/crew/crew.css">
+  <link rel="stylesheet" href="./style/typography.css">
+  <script defer src="js/ham.js"></script>
+  <script defer src="js/transitions.js"></script>
+  <script defer src="js/tabs.js"></script>
+
+  <title>Space tourism | Crew</title>
+</head>
+<body id="_body">
+  <div class="transition transition-1 is-active"></div>
+  <div id="ham-nav">
+    <a  href="./index.html" id="active">
+      <span class="a_number">00</span>
+      <span class="a_text">HOME</span>
+    </a>
+    <a href="./destination.html">
+      <span class="a_number">01</span>
+      <span class="a_text">DESTINATION</span>
+    </a>
+    <a href="./crew.html">
+      <span class="a_number">02</span>
+      <span class="a_text">CREW</span>
+    </a>
+    <a href="./technology.html">
+      <span class="a_number">03</span>
+      <span class="a_text">TECHNOLOGY</span>
+    </a>
+  </div>
+  <nav>
+    <a class="_hidden" href="./index.html"><img id="logo" src="./assets/shared/logo.svg" alt="logo"></a>
+    <span class="_hidden h_hid1" style="transition-delay: 100ms;" id="line"></span>
+    <div id="nav" class="_hidden">
+      <a class="_hidden h_hid2" style="transition-delay: 200ms;" href="./index.html">
+        <span class="a_number">00</span>
+        <span class="a_text">HOME</span>
+      </a>
+      <a class="_hidden h_hid3" style="transition-delay: 300ms;" href="./destination.html">
+        <span class="a_number">01</span>
+        <span class="a_text">DESTINATION</span>
+      </a>
+      <a class="_hidden h_hid4" style="transition-delay: 400ms;" href="./crew.html" id="active">
+        <span class="a_number">02</span>
+        <span class="a_text">CREW</span>
+      </a>
+      <a class="_hidden h_hid5" style="transition-delay: 500ms;" href="./technology.html">
+        <span class="a_number">03</span>
+        <span class="a_text">TECHNOLOGY</span>
+      </a>
+    </div>
+    <button class="_hidden" id="ham-button" onclick="this.classList.toggle('open'); Open(this);"><img id="ham-img" src="./assets/shared/icon-hamburger.svg" alt=""></button>
+  </nav>
+  <div id="title" class="_hidden" style="transition-delay: 600ms;">
+      <h5 id="dest_number">02</h5>
+      <h5>MEET YOUR CREW</span>
+  </div>
+  <section>
+      <div id="left">
+        <div class="_tab text-content active">
+            <h4 class="_tab" style="animation-delay: 1000ms;">COMMANDER</h4>
+            <h3 class="_tab" style="animation-delay: 900ms;">DOUGLAS HURLEY</h3>
+            <p class="_tab" style="animation-delay: 800ms;">
+              Douglas Gerald Hurley is an American engineer, former 
+              Marine Corps pilot and former NASA astronaut. He 
+              launched into space for the third time as commander of 
+              Crew Dragon Demo-2.
+            </p>
+        </div>
+        <div class="_tab text-content">
+          <h4>MISSION SPECIALIST</h4>
+          <h3>MARK SHUTTLEWORTH</h3>
+          <p>
+            Mark Richard Shuttleworth is the founder and CEO of 
+            Canonical, the company behind the Linux-based Ubuntu 
+            operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.
+          </p>
+        </div>
+        <div class="_tab text-content">
+          <h4>PILOT</h4>
+          <h3>VICTOR GLOVER</h3>
+          <p>
+            Pilot on the first operational flight of the SpaceX Crew 
+            Dragon to the International Space Station. Glover is a 
+            commander in the U.S. Navy where he pilots an F/A-18. He 
+            was a crew member of Expedition 64, and served as a 
+            station systems flight engineer. 
+          </p>
+        </div>
+        <div class="_tab text-content">
+          <h4>FLIGHT ENGINEER</h4>
+          <h3>ANOUSHEH ANSARI</h3>
+          <p>
+            Anousheh Ansari is an Iranian American engineer and 
+            co-founder of Prodea Systems. Ansari was the fourth 
+            self-funded space tourist, the first self-funded woman to 
+            fly to the ISS, and the first Iranian in space. 
+          </p>
+        </div>
+        
+        <div id="tabs">
+            <button class="_hidden tab active" style="animation-delay: 1600ms;"></button>
+            <button class="_hidden tab" style="animation-delay: 1700ms;"></button>
+            <button class="_hidden tab" style="animation-delay: 1800ms;"></button>
+            <button class="_hidden tab" style="animation-delay: 1900ms;"></button>
+        </div>  
+      </div>
+      <hr>
+      <div id="right">
+        <img style="animation-delay: 1250ms;" class="_tab crew-img active" src="./assets/crew/image-douglas-hurley.png" alt="commander">
+        <img style="animation-delay: 0ms;" class="_tab crew-img" src="./assets/crew/image-mark-shuttleworth.png" alt="mission specialist">
+        <img style="animation-delay: 0ms;" class="_tab crew-img" src="./assets/crew/image-victor-glover.png" alt="pilot">
+        <img style="animation-delay: 0ms;" class="_tab crew-img" src="./assets/crew/image-anousheh-ansari.png" alt="flight engineer">
+      </div>
+  </section>
+</body>
+</html>

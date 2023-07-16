@@ -1,0 +1,123 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/technology/technology.css">
+  <link rel="stylesheet" href="./style/typography.css">
+  <script defer src="js/ham.js"></script>
+  <script defer src="js/transitions.js"></script>
+  
+  <script defer src="js/tabs.js"></script>
+  <title>Space tourism | Technology</title>
+</head>
+<body id="_body">
+  <div class="transition transition-1 is-active"></div>
+  <div id="ham-nav">
+    <a  href="./index.html" id="active">
+      <span class="a_number">00</span>
+      <span class="a_text">HOME</span>
+    </a>
+    <a href="./destination.html">
+      <span class="a_number">01</span>
+      <span class="a_text">DESTINATION</span>
+    </a>
+    <a href="./crew.html">
+      <span class="a_number">02</span>
+      <span class="a_text">CREW</span>
+    </a>
+    <a href="./technology.html">
+      <span class="a_number">03</span>
+      <span class="a_text">TECHNOLOGY</span>
+    </a>
+  </div>
+  <nav>
+    <a class="_hidden" href="./index.html"><img id="logo" src="./assets/shared/logo.svg" alt="logo"></a>
+    <span class="_hidden h_hid1" style="transition-delay: 100ms;" id="line"></span>
+    <div id="nav" class="_hidden">
+      <a class="_hidden h_hid2" style="transition-delay: 200ms;" href="./index.html">
+        <span class="a_number">00</span>
+        <span class="a_text">HOME</span>
+      </a>
+      <a class="_hidden h_hid3" style="transition-delay: 300ms;" href="./destination.html">
+        <span class="a_number">01</span>
+        <span class="a_text">DESTINATION</span>
+      </a>
+      <a class="_hidden h_hid4" style="transition-delay: 400ms;" href="./crew.html">
+        <span class="a_number">02</span>
+        <span class="a_text">CREW</span>
+      </a>
+      <a class="_hidden h_hid5" style="transition-delay: 500ms;" href="./technology.html" id="active">
+        <span class="a_number">03</span>
+        <span class="a_text">TECHNOLOGY</span>
+      </a>
+    </div>
+    <button class="_hidden" id="ham-button" onclick="this.classList.toggle('open'); Open(this);"><img id="ham-img" src="./assets/shared/icon-hamburger.svg" alt=""></button>
+  </nav>
+  <div id="title" class="_hidden" style="transition-delay: 600ms;">
+      <h5 id="dest_number">03</h5>
+      <h5>SPACE LAUNCH 101</span>
+  </div>
+  <section>
+      <div id="left">
+        <div class="_tab text-content active">
+            <span class="_tab nav-text" style="animation-delay: 1000ms;">THE TERMINOLOGY...</span>
+            <h3 class="_tab" style="animation-delay: 900ms;">LAUNCH VEHICLE</h3>
+            <p class="_tab" style="animation-delay: 800ms;">
+              A launch vehicle or carrier rocket is a rocket-propelled 
+              vehicle used to carry a payload from Earth's surface to 
+              space, usually to Earth orbit or beyond. Our WEB-X 
+              carrier rocket is the most powerful in operation. Standing 
+              150 metres tall, it's quite an awe-inspiring sight on the 
+              launch pad!
+            </p>
+        </div>
+        <div class="_tab text-content">
+          <span class="_tab nav-text" style="animation-delay: 1300ms;">THE TERMINOLOGY...</span>
+          <h3>SPACEPORT</h3>
+          <p>
+            A spaceport or cosmodrome is a site for launching (or 
+            receiving) spacecraft, by analogy to the seaport for ships 
+            or airport for aircraft. Based in the famous Cape 
+            Canaveral, our spaceport is ideally situated to take 
+            advantage of the Earth’s rotation for launch.
+          </p>
+        </div>
+        <div class="_tab text-content">
+          <span class="_tab nav-text" style="animation-delay: 1300ms;">THE TERMINOLOGY...</span>
+          <h3>SPACE CAPSULE</h3>
+          <p>
+            A space capsule is an often-crewed spacecraft that uses 
+            a blunt-body reentry capsule to reenter the Earth's 
+            atmosphere without wings. Our capsule is where you'll 
+            spend your time during the flight. It includes a space 
+            gym, cinema, and plenty of other activities to keep you 
+            entertained. 
+          </p>
+        </div>
+        <div id="tabs">
+            <button class="_hidden tab active" style="animation-delay: 1600ms;">1</button>
+            <button class="_hidden tab" style="animation-delay: 1700ms;">2</button>
+            <button class="_hidden tab" style="animation-delay: 1800ms;">3</button>
+        </div>  
+      </div>
+      <div id="right">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./assets/technology/image-launch-vehicle-portrait.jpg">
+          <img style="animation-delay: 1300ms;" class="_tab tech-img active" src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="launch vehicle">
+        </picture>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./assets/technology/image-spaceport-portrait.jpg">
+          <img class="_tab tech-img" src="./assets/technology/image-spaceport-landscape.jpg" alt="launch vehicle">
+        </picture>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./assets/technology/image-space-capsule-portrait.jpg">
+          <img class="_tab tech-img" src="./assets/technology/image-space-capsule-landscape.jpg" alt="launch vehicle">
+        </picture>
+      </div>
+  </section>
+</body>
+</html>

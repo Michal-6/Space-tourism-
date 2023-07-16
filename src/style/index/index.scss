@@ -1,0 +1,81 @@
+$black: #0B0D17;
+$white: #FFFFFF;
+$primary: #D0D6F9;
+
+$tablet: 1300px;
+$mobile: 768px;
+
+body{
+  #ham-nav{
+    width: 0%;
+    display:flex; flex-direction: column; gap: 32px;
+    position: absolute; z-index: 2;
+    height: 100%; padding-top: 118px;
+    background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(40.774227142333984px);
+    transition: all ease-in-out 200ms; overflow: hidden; right: 0px;
+    a{
+      color: white; text-decoration: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      display: flex; gap: 11px; margin-right: auto; padding-left: 32px;
+      .a_number{font-weight: 700;}
+    }
+  }
+    margin: 0; 
+    background-image: url("../../assets/home/background-home-desktop.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+    @media only screen and (max-width: $tablet) {background-image: url(../../assets/home/background-home-tablet.jpg);}
+    @media only screen and (max-width: $mobile) {background-image: url(../../assets/home/background-home-mobile.jpg);}
+    nav{
+        padding-left: 55px; padding-top: 40px;
+        color: white;
+        display: flex; justify-content: space-between; align-items: center;
+        @media only screen and (max-width: $tablet) {padding-left: 39px; padding-top: 0px;}
+        @media only screen and (max-width: $mobile) {padding: 24px;}
+        #line{@media only screen and (max-width: $tablet) {display: none;} position: absolute; left: 180px; z-index: 1; width: calc(100% - 830px - 120px); height: 1px; background-color: #979797;}
+        div{
+            padding: 0px 165px 0px 123px;
+            background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(40.774227142333984px);
+            display: flex; gap: 48px;
+            @media only screen and (max-width: $tablet) {padding: 0px 47px; gap: 37px;}
+            a{
+              color: white; text-decoration: none;
+              cursor: pointer;
+              box-sizing: border-box;
+              display: flex; gap: 11px;
+              padding: 38px 0px;
+              .a_number{font-weight: 700;}
+              border-bottom:  3px solid;
+              border-color: rgba(255, 255, 255, 0);
+              transition: all ease-in-out 200ms;
+              @media only screen and (max-width: $mobile) {display: none;}
+            }
+            a:hover{border-color: rgba(255, 255, 255, 0.5);}
+            .active{
+              border-bottom:  3px solid white;
+            }
+        }
+        button{
+          display: none; background-color: rgba(255, 255, 255, 0); border: none; cursor: pointer; z-index: 3;
+          @media only screen and (max-width: $mobile) {display: block;}
+        }
+    }
+    section{
+      display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding: 165px 250px; height: auto; 
+      @media only screen and (max-width: $tablet) {gap: 156px; align-items: center; flex-direction: column; text-align: center; padding: 106px 0px;}
+      @media only screen and (max-width: $mobile) {padding: 48px 24px; gap: 81px; height: auto;}
+      div{
+        display: flex; flex-direction: column; gap: 24px;
+        width: 450px;
+        @media only screen and (max-width: $mobile) {width: 100%;}
+        h5{margin: 0px;}
+        h1{margin: 0px;}
+        p{margin: 0px;}
+      }
+      a{border-radius: 50%; outline: solid 0px rgba(255, 255, 255, 0.1); transition: all ease-in-out 200ms;}
+      #cta{border: none; cursor: pointer; width: 274px; height: 274px; border: none; border-radius: 50%; color: $black;}
+      a:hover{
+        outline: solid 88px rgba(255, 255, 255, 0.1);
+        @media only screen and (max-width: $mobile) {outline-width: 44px;}
+      }
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="So, you want to travel to space? 
+  Let’s face it; if want to go to space, you might as well genuinely 
+  go to outer space and not hover kind of on the edge of it. Well sit back, 
+  and relax because we’ll give you a truly out of this world experience!">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/index/index.css">
+  <link rel="stylesheet" href="./style/typography.css">
+  <script defer src="js/ham.js"></script>
+  <script defer src="js/transitions.js"></script>
+ 
+  <title>Space tourism</title>
+</head>
+<body id="_body">
+  <div class="transition transition-1 is-active"></div>
+  <div id="ham-nav">
+      <a class="active"  href="./index.html">
+        <span class="a_number">00</span>
+        <span class="a_text">HOME</span>
+      </a>
+      <a href="./destination.html">
+        <span class="a_number">01</span>
+        <span class="a_text">DESTINATION</span>
+      </a>
+      <a href="./crew.html">
+        <span class="a_number">02</span>
+        <span class="a_text">CREW</span>
+      </a>
+      <a href="./technology.html">
+        <span class="a_number">03</span>
+        <span class="a_text">TECHNOLOGY</span>
+      </a>
+  </div>
+  <nav>
+    <a class="_hidden" href="./index.html"><img id="logo" src="./assets/shared/logo.svg" alt="logo"></a>
+    <span class="_hidden h_hid1" style="transition-delay: 100ms;" id="line"></span>
+    <div id="nav" class="_hidden">
+      <a class="active _hidden h_hid2" style="transition-delay: 200ms;" href="./index.html">
+        <span class="a_number">00</span>
+        <span class="a_text">HOME</span>
+      </a>
+      <a class="_hidden h_hid3" style="transition-delay: 300ms;" href="./destination.html">
+        <span class="a_number">01</span>
+        <span class="a_text">DESTINATION</span>
+      </a>
+      <a class="_hidden h_hid4" style="transition-delay: 400ms;" href="./crew.html">
+        <span class="a_number">02</span>
+        <span class="a_text">CREW</span>
+      </a>
+      <a class="_hidden h_hid5" style="transition-delay: 500ms;" href="./technology.html">
+        <span class="a_number">03</span>
+        <span class="a_text">TECHNOLOGY</span>
+      </a>
+    </div>
+    <button class="_hidden" id="ham-button" onclick="this.classList.toggle('open'); Open(this);"><img id="ham-img" src="./assets/shared/icon-hamburger.svg" alt=""></button>
+  </nav>
+  <section>
+    <div>
+        <h5 class="_hidden" style="transition-delay: 600ms;">SO, YOU WANT TO TRAVEL TO</h5>
+        <h1 class="_hidden" style="transition-delay: 700ms;">SPACE</h1>
+        <p class="_hidden" style="transition-delay: 800ms;">
+          Let’s face it; if you want to go to space, you might as well 
+          genuinely go to outer space and not hover kind of on the 
+          edge of it. Well sit back, and relax because we’ll give you a 
+          truly out of this world experience!
+        </p>
+    </div>
+    <a id="cta_a" href="./destination.html"><button id="cta" class="_hidden .button" style="transition-delay: 900ms;"><h4>EXPLORE</h4></button></a>
+  </section>
+</body>
+</html>

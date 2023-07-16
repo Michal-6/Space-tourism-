@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body #ham-nav {
+  width: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  padding-top: 118px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742271423px);
+          backdrop-filter: blur(40.7742271423px);
+  transition: all ease-in-out 200ms;
+  overflow: hidden;
+  right: 0px;
+}
+body #ham-nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  gap: 11px;
+  margin-right: auto;
+  padding-left: 32px;
+}
+body #ham-nav a .a_number {
+  font-weight: 700;
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+  }
+}
+body nav {
+  padding-left: 55px;
+  padding-top: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 1300px) {
+  body nav {
+    padding-left: 39px;
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body nav {
+    padding: 24px;
+  }
+}
+body nav #line {
+  position: absolute;
+  left: 180px;
+  z-index: 1;
+  width: calc(100% - 830px - 120px);
+  height: 1px;
+  background-color: #979797;
+}
+@media only screen and (max-width: 1300px) {
+  body nav #line {
+    display: none;
+  }
+}
+body nav div {
+  padding: 0px 165px 0px 123px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742271423px);
+          backdrop-filter: blur(40.7742271423px);
+  display: flex;
+  gap: 48px;
+}
+@media only screen and (max-width: 1300px) {
+  body nav div {
+    padding: 0px 47px;
+    gap: 37px;
+  }
+}
+body nav div a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  gap: 11px;
+  padding: 38px 0px;
+  border-bottom: 3px solid;
+  border-color: rgba(255, 255, 255, 0);
+  transition: all ease-in-out 200ms;
+}
+body nav div a .a_number {
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  body nav div a {
+    display: none;
+  }
+}
+body nav div a:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+body nav div .active {
+  border-bottom: 3px solid white;
+}
+body nav button {
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+@media only screen and (max-width: 768px) {
+  body nav button {
+    display: block;
+  }
+}
+body section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 165px 250px;
+  height: auto;
+}
+@media only screen and (max-width: 1300px) {
+  body section {
+    gap: 156px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 106px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body section {
+    padding: 48px 24px;
+    gap: 81px;
+    height: auto;
+  }
+}
+body section div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 450px;
+}
+@media only screen and (max-width: 768px) {
+  body section div {
+    width: 100%;
+  }
+}
+body section div h5 {
+  margin: 0px;
+}
+body section div h1 {
+  margin: 0px;
+}
+body section div p {
+  margin: 0px;
+}
+body section a {
+  border-radius: 50%;
+  outline: solid 0px rgba(255, 255, 255, 0.1);
+  transition: all ease-in-out 200ms;
+}
+body section #cta {
+  border: none;
+  cursor: pointer;
+  width: 274px;
+  height: 274px;
+  border: none;
+  border-radius: 50%;
+  color: #0B0D17;
+}
+body section a:hover {
+  outline: solid 88px rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width: 768px) {
+  body section a:hover {
+    outline-width: 44px;
+  }
+}/*# sourceMappingURL=index.css.map */
