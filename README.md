@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/space-tourism-website-S7qMFboIvR](https://www.frontendmentor.io/solutions/space-tourism-website-S7qMFboIvR)
+- Live Site URL: [https://michal-6.github.io/Space-tourism-/src/index.html](https://michal-6.github.io/Space-tourism-/src/index.html)
 
 ## My process
 
